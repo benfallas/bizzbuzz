@@ -14,9 +14,11 @@
         android:text=""
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="84dp"
+        android:layout_marginTop="60dp"
+        android:textSize="55sp"
         android:id="@+id/number_display"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:elegantTextHeight="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>

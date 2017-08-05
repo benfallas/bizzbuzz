@@ -12,6 +12,7 @@ import butterknife.OnClick;
 
 public class HomeActivity extends AppCompatActivity {
 
+    @BindView(R.id.rules_button) Button rulesButton;
     @BindView(R.id.play_button) Button play_button;
 
     @Override
@@ -21,6 +22,12 @@ public class HomeActivity extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
+    @OnClick(R.id.rules_button)
+    protected void onRulesButtonClicked(){
+        Intent intent = new Intent(this, RulesActivity.class);
+        startActivity(intent);
+    }
+
     @OnClick(R.id.play_button)
     public void onPlayButtonClicked() {
         Intent intent = new Intent(this, PlayActivity.class);
@@ -28,5 +35,4 @@ public class HomeActivity extends AppCompatActivity {
 
 
     }
-
 }

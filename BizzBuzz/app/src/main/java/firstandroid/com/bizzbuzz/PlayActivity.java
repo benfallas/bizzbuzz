@@ -19,10 +19,14 @@ public class PlayActivity extends AppCompatActivity {
         setContentView(R.layout.activity_play);
         ButterKnife.bind(this);
 
+        generateRandomNum();
+    }
+
+
+    public void generateRandomNum(){
         Random rand = new Random();
         int pickedNumber = rand.nextInt(100) + 1;
         number_display.setText(String.valueOf(pickedNumber));
     }
-
 
 }

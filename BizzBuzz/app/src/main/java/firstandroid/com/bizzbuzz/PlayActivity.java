@@ -88,6 +88,7 @@ public class PlayActivity extends AppCompatActivity {
     private void launchGameOver() {
         Intent intent = new Intent(this, GameOverActivity.class);
         startActivity(intent);
+        finish();
     }
 
 

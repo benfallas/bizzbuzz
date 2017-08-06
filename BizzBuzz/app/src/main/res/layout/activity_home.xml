@@ -12,7 +12,7 @@
 
 
     <Button
-        android:text="Play"
+        android:text="@string/play"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -27,5 +27,5 @@
         android:layout_alignEnd="@+id/play_button"
         android:layout_below="@+id/play_button"
         android:layout_marginTop="37dp"
-        android:text="Rules" />
+        android:text="@string/rules" />
 </RelativeLayout>

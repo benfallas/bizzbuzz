@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">BizzBuzz</string>
+    <string name="game_over">Game Over</string>
+    <string name="home">Home</string>
+    <string name="play">Play</string>
+    <string name="rules">Rules</string>
+    <string name="buzz">Buzz</string>
+    <string name="bizz_buzz">Bizz-Buzz</string>
+    <string name="bizz">Bizz</string>
+    <string name="next">Next</string>
+    <string name="game_instructions">\nThis game begins by giving you a random number between 1 and 100.\nIf the number is divisable by 7 and/or contains the number 7, press \'Buzz\'.\nIf the number is divisable and/or contains thenumber 5, press \'Bizz\'.\nIf the number is both \'Bizz\' and \'Buzz\', then press \'BizzBuzz\'.\n\nIf you are incorrect. Game Over. Have Fun!</string>
 </resources>

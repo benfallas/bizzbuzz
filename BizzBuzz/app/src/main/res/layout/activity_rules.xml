@@ -21,7 +21,7 @@
         android:id="@+id/textView3"
         android:layout_width="0dp"
         android:layout_height="329dp"
-        android:text="\nThis game begins by giving you a random number between 1 and 100.\nIf the number is divisable by 7 and/or contains the number 7, press 'Buzz'.\nIf the number is divisable and/or contains thenumber 5, press 'Bizz'.\nIf the number is both 'Bizz' and 'Buzz', then press 'BizzBuzz'.\n\nIf you are incorrect. Game Over. Have Fun!"
+        android:text="@string/game_instructions"
         tools:layout_constraintTop_creator="1"
         tools:layout_constraintRight_creator="1"
         android:layout_marginStart="16dp"

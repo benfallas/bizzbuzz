@@ -24,7 +24,7 @@
         android:layout_alignParentStart="true" />
 
     <Button
-        android:text="Buzz"
+        android:text="@string/buzz"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/buzz_button"
@@ -34,7 +34,7 @@
         android:layout_marginStart="25dp" />
 
     <Button
-        android:text="Bizz-Buzz"
+        android:text="@string/bizz_buzz"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="29dp"
@@ -43,7 +43,7 @@
         android:layout_alignEnd="@+id/buzz_button" />
 
     <Button
-        android:text="Bizz"
+        android:text="@string/bizz"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/bizz_button"
@@ -53,7 +53,7 @@
         android:layout_alignParentEnd="true" />
 
     <Button
-        android:text="Next"
+        android:text="@string/next"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="12dip"

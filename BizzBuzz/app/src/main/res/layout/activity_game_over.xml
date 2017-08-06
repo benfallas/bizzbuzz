@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_game_over"
     android:layout_width="match_parent"
@@ -27,4 +28,13 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="155dp"
         android:id="@+id/home_button" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/disapemoji"
+        android:id="@+id/disappointed_emoji"
+        android:layout_above="@+id/home_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="27dp" />
 </RelativeLayout>

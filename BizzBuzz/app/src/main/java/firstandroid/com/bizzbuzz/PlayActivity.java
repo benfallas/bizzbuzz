@@ -44,6 +44,7 @@ public class PlayActivity extends AppCompatActivity {
     public void onBuzzButtonClicked(){
         if(checkBuzz()) {
             Toast.makeText(this, "CORRECT", Toast.LENGTH_SHORT).show();
+            generateRandomNum();
         } else {
             Toast.makeText(this, "WRONG", Toast.LENGTH_SHORT).show();
         }
@@ -53,6 +54,7 @@ public class PlayActivity extends AppCompatActivity {
     public void onBizzButtonClicked(){
         if(checkBizz()) {
             Toast.makeText(this, "CORRECT", Toast.LENGTH_SHORT).show();
+            generateRandomNum();
         } else {
             Toast.makeText(this, "WRONG", Toast.LENGTH_SHORT).show();
         }
@@ -61,6 +63,7 @@ public class PlayActivity extends AppCompatActivity {
     public void onBizzBuzzButtonClicked(){
         if(checkBizzBuzz()) {
             Toast.makeText(this, "CORRECT", Toast.LENGTH_SHORT).show();
+            generateRandomNum();
         } else {
             Toast.makeText(this, "WRONG", Toast.LENGTH_SHORT).show();
 
@@ -70,6 +73,7 @@ public class PlayActivity extends AppCompatActivity {
     public void onNextButtonClicked(){
         if(checkNext()) {
             Toast.makeText(this, "CORRECT", Toast.LENGTH_SHORT).show();
+            generateRandomNum();
         } else {
             Toast.makeText(this, "WRONG", Toast.LENGTH_SHORT).show();
         }

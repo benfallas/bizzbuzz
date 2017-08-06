@@ -1,5 +1,6 @@
 package firstandroid.com.bizzbuzz;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
@@ -40,6 +41,7 @@ public class PlayActivity extends AppCompatActivity {
         number_display.setText(String.valueOf(pickedNumber));
     }
 
+
     @OnClick(R.id.buzz_button)
     public void onBuzzButtonClicked(){
         if(checkBuzz()) {
@@ -47,6 +49,7 @@ public class PlayActivity extends AppCompatActivity {
             generateRandomNum();
         } else {
             Toast.makeText(this, "WRONG", Toast.LENGTH_SHORT).show();
+            launchGameOver();
         }
     }
 
@@ -57,6 +60,7 @@ public class PlayActivity extends AppCompatActivity {
             generateRandomNum();
         } else {
             Toast.makeText(this, "WRONG", Toast.LENGTH_SHORT).show();
+            launchGameOver();
         }
     }
     @OnClick(R.id.bizz_buzz_button)
@@ -66,6 +70,7 @@ public class PlayActivity extends AppCompatActivity {
             generateRandomNum();
         } else {
             Toast.makeText(this, "WRONG", Toast.LENGTH_SHORT).show();
+            launchGameOver();
 
         }
     }
@@ -76,8 +81,15 @@ public class PlayActivity extends AppCompatActivity {
             generateRandomNum();
         } else {
             Toast.makeText(this, "WRONG", Toast.LENGTH_SHORT).show();
+            launchGameOver();
         }
     }
+
+    private void launchGameOver() {
+        Intent intent = new Intent(this, GameOverActivity.class);
+        startActivity(intent);
+    }
+
 
     private boolean checkBuzz() {
         if (isDisibleBySeven()) {

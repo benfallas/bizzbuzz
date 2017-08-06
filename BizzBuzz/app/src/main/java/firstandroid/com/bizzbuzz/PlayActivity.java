@@ -1,9 +1,12 @@
 package firstandroid.com.bizzbuzz;
 
 import android.content.Intent;
+import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -23,6 +26,7 @@ public class PlayActivity extends AppCompatActivity {
     @BindView(R.id.bizz_button) Button bizz_button;
     @BindView(R.id.bizz_buzz_button) Button bizz_buzz_botton;
     @BindView(R.id.next_button) Button next_button;
+    @BindView(R.id.cool_emoji) ImageView cool_emoji;
 
 
     @Override
@@ -32,6 +36,7 @@ public class PlayActivity extends AppCompatActivity {
         ButterKnife.bind(this);
 
         generateRandomNum();
+        cool_emoji.setVisibility(View.GONE);
     }
 
 
@@ -47,6 +52,7 @@ public class PlayActivity extends AppCompatActivity {
         if(checkBuzz()) {
             Toast.makeText(this, "CORRECT", Toast.LENGTH_SHORT).show();
             generateRandomNum();
+            showEmoji();
         } else {
             Toast.makeText(this, "WRONG", Toast.LENGTH_SHORT).show();
             launchGameOver();
@@ -58,6 +64,7 @@ public class PlayActivity extends AppCompatActivity {
         if(checkBizz()) {
             Toast.makeText(this, "CORRECT", Toast.LENGTH_SHORT).show();
             generateRandomNum();
+            showEmoji();
         } else {
             Toast.makeText(this, "WRONG", Toast.LENGTH_SHORT).show();
             launchGameOver();
@@ -68,6 +75,7 @@ public class PlayActivity extends AppCompatActivity {
         if(checkBizzBuzz()) {
             Toast.makeText(this, "CORRECT", Toast.LENGTH_SHORT).show();
             generateRandomNum();
+            showEmoji();
         } else {
             Toast.makeText(this, "WRONG", Toast.LENGTH_SHORT).show();
             launchGameOver();
@@ -79,9 +87,15 @@ public class PlayActivity extends AppCompatActivity {
         if(checkNext()) {
             Toast.makeText(this, "CORRECT", Toast.LENGTH_SHORT).show();
             generateRandomNum();
+            showEmoji();
         } else {
             Toast.makeText(this, "WRONG", Toast.LENGTH_SHORT).show();
             launchGameOver();
+        }
+    }
+    private void showEmoji() {
+        if (!cool_emoji.isShown()) {
+            cool_emoji.setVisibility(View.VISIBLE);
         }
     }
 
